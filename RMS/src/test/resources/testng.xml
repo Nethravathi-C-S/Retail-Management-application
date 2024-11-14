@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNGSuite" parallel="tests">
+ <listeners>
+  <listener class-name="utilities.ExtentReportManager"/>
+ </listeners>
+
+ <test name="RMS Test on Chrome">
+  <parameter name="browser" value="chrome" />
+  <classes>
+<!--   <class name="testCases.TC_1_LoginTest"/>-->
+<!--   <class name="testCases.TC_2_OrgSelectTest"/>-->
+<!--   <class name="testCases.TC_3_RegularProductCreation"/>-->
+      <class name="testCases.TC_4_WeighingScaleProductCreation"/>
+<!--      <class name="testCases.TC_5_VendorCreation"/>-->
+<!--      <class name="testCases.TC_6_PICreation"/>-->
+  </classes>
+  <groups>
+   <run>
+    <include name="Sanity" />
+    <include name="Regression" />
+   </run>
+  </groups>
+ </test>
+
+<!-- <test name="FTest">-->
+<!-- <parameter name="browser" value="firefox" />-->
+<!-- <classes>-->
+<!--  <class name="testCases.TC_001_LoginTest"/>-->
+<!-- </classes>-->
+<!-- <groups>-->
+<!--  <run>-->
+<!--   <include name="Sanity" />-->
+<!--   <include name="Regression" />-->
+<!--  </run>-->
+<!-- </groups>-->
+<!-- </test>-->
+
+</suite>
+
+
+
+
+
+
