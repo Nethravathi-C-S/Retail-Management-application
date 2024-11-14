@@ -1,1 +1,1 @@
-# RMS-Test-Automation
+# Retail Management System Application
